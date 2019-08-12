@@ -1,0 +1,25 @@
+{% extends "page.html.twig" %}
+
+{% block content %}
+  <div class="noticias-aluno-container">
+    {{ parent() }}
+  </div>
+{% endblock %}
+
+{% block printScript %}
+  <script>
+    (function (window, document) {
+      'use strict';
+      window.addEventListener('load', function () {
+        var pageTitle = document.querySelector('.page-title');
+        pageTitle.classList.add('with-link');
+        var newLink = document.createElement('a');
+        newLink.classList.add('btn');
+        newLink.classList.add('btn-primary');
+        newLink.setAttribute('href', '/node/add/noticias');
+        newLink.innerHTML = `<span>Criar Notícia</span>`
+        pageTitle.append(newLink);
+      });
+    })(window, document);
+  </script>
+{% endblock %}

@@ -1,0 +1,41 @@
+{# <ol>
+  {% for key, value in content %}
+    <li>{{ key }}
+      {{ value }}</li>
+  {% endfor %}
+</ol> #}
+
+
+<div class="news-page-internal">
+  <div class="news-header">
+    <div class="linha-fina">{{ content.field_chamada }}</div>
+    <div class="infos">
+      {{ content.field_autor }}
+      |
+      {{ content.field_data }}
+    </div>
+    <div class="share-buttons">
+      <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank">
+        <span>compartilhe</span>
+      </a>
+      <a class="twitter" href="https://twitter.com/intent/tweet?text=" target="_blank">
+        <span>tweet</span>
+      </a>
+      <a class="linkedin" href="https://www.linkedin.com/cws/share?url=" target="_blank">
+        <span>compartilhe</span>
+      </a>
+    </div>
+  </div>
+  <div class="content">
+    {{content.body}}
+  </div>
+  <div class="tag-list">
+    <div class="title">Tags</div>
+    <div class="tags">
+      {{content.field_tags}}
+    </div>
+  </div>
+</div>
+
+{# {% endblock %} #}
+{# {% block printScript %}{% endblock %} #}

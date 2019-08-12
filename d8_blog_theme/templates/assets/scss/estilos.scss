@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+// ### Helpers
+@import "_helpers/_variables", "_helpers/_mixin", "_helpers/_reset"; // normalize
+
+// ### Bases do projeto
+@import "_base/_base.scss", "_base/_typography.scss";
+
+// ### Bases do projeto
+@import "_components/_carousel/__global.scss";
+@import "_components/_news/__global.scss";
+@import "_components/_form-login/__global.scss";
+@import "_components/_user-top-bar/__global.scss";
+@import "_components/_share-buttons/__global.scss";
+
+// ### Layout
+@import "_layout/_header/__global.scss";
+@import "_layout/_footer/__global.scss";
+@import "_layout/_internas/__global.scss";

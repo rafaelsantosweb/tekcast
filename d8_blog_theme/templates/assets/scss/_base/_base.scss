@@ -1,0 +1,103 @@
+html * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  // background: #fff;
+  background: #f9f9f9;
+  padding: 0;
+  margin: 0;
+  @include font-montserrat(400);
+  font-size: $base-font-size;
+  color: #333; //-moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased; //-webkit-backface-visibility:(hidden); // Fixes Chrome 1px shift rendering issue on CSS3 transitions.
+}
+
+a,
+a:link,
+a:visited {
+  color: #333333;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  outline: none;
+  text-decoration: underline;
+}
+
+.main {
+  position: relative;
+  @include cf();
+}
+
+.wrapper {
+  // position: relative;
+  margin: 0 auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100%;
+  max-width: $bodyWidth + px;
+  float: none;
+  &.clear {
+    @include cf();
+  }
+}
+
+.blur {
+  @include mqrange(0, 768px) {
+    filter: blur(1.5rem);
+  }
+}
+.transition {
+  @include mqrange(0, 768px) {
+    transition: all 0.3s linear;
+  }
+}
+
+.btn-editar {
+  position: absolute;
+  z-index: 500;
+  display: block;
+  width: auto;
+  padding: 5px;
+  margin-top: -30px;
+  z-index: 9999;
+}
+
+.btn-editar-drupal-view a {
+  display: block;
+  width: auto;
+  padding: 5px;
+}
+
+.btn-editar-drupal-view a > span {
+  display: block;
+  width: auto;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background: #cddc39;
+  border: solid 1px #d8e464;
+  box-shadow: 0 3px 0 #89951a;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.btn-edit-group {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background: #cddc39;
+  border: solid 1px #d8e464;
+  box-shadow: 0 3px 0 #89951a;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 12px;
+}

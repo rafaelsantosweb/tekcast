@@ -1,0 +1,100 @@
+// https://fonts.google.com/?query=mont&selection.family=Montserrat:300,400,500,600,700,800
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Roboto:400,500,700,900&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
+// font-family: 'Roboto', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include font-montserrat(700);
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* PadronizaÃ§Ã£o de tÃ­tulos Hs */
+// .titles{
+//   a {
+//     color: #007c89;
+//     text-decoration: none;
+//     line-height: normal;
+//     border-bottom: 1px solid;
+//     &:hover {
+//       text-decoration: none;
+//     }
+//   }
+
+//   a:hover {
+//     color: #004e56;
+//   }
+
+//   a:visited {
+//     color: #17607d;
+//   }
+
+//   // a:hover,
+//   a:focus {
+//     outline: none;
+//     text-decoration: underline;
+//   }
+
+//   p {
+//     & > a {
+//       line-height: normal;
+//       border-bottom: 1px solid;
+//       &:hover {
+//         text-decoration: none;
+//       }
+//     }
+//   }
+// }
+
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 25px;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 15px;
+}
+h6 {
+  font-size: 13px;
+}
+
+p {
+  //font-weight: 400;
+  font-size: 15px;
+  //line-height: 20px;
+  line-height: 1.5;
+  //font: 400 15px/21px;
+  strong {
+    font-weight: 600;
+  }
+}
+
+blockquote {
+  margin: 20px 0;
+  padding-left: 1.5rem;
+  border-left: 5px solid #333;
+  @include font-montserrat();
+}
+
+blockquote p {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+h1.page-title {
+  font-weight: 300;
+}

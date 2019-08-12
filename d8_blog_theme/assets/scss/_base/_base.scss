@@ -1,0 +1,50 @@
+html * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  padding: 0;
+  margin: 0;
+  @include font-montserrat(400);
+  font-size: $base-font-size;
+  color: #333; //-moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased; //-webkit-backface-visibility:(hidden); // Fixes Chrome 1px shift rendering issue on CSS3 transitions.
+}
+
+a,
+a:link,
+a:visited {
+  color: #333333;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  outline: none;
+  text-decoration: underline;
+}
+
+.main {
+  position: relative;
+  @include cf();
+}
+
+.wrapper {
+  // position: relative;
+  margin: 0 auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100%;
+  max-width: $bodyWidth + px;
+  float: none;
+  &.clear {
+    @include cf();
+  }
+}

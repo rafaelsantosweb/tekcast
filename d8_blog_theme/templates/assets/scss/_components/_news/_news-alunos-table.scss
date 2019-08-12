@@ -1,0 +1,98 @@
+.noticias-aluno-container {
+  .page-title {
+    text-align: left;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 15px 0;
+    font-weight: 300;
+    &.with-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      a.btn-primary {
+        color: #fff;
+      }
+    }
+  }
+  .noticias-aluno-table {
+    margin-top: 35px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: solid 1px #eee;
+    box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.05);
+    // padding: 18px;
+    table {
+      width: 100%;
+      border: 0;
+      border-spacing: 0;
+      thead {
+        border-spacing: 0;
+        th {
+          padding: 20px 15px;
+          font-size: 14px !important;
+          font-weight: 600 !important;
+          text-align: left;
+          color: #595d6e !important;
+          border-bottom: solid 1px #eee;
+          border-collapse: collapse;
+          border-spacing: 0;
+          &.views-field-field-data {
+            width: 140px;
+            text-align: left;
+          }
+          &.views-field-created {
+            width: 130px;
+            // text-align: center;
+            text-align: left;
+            padding-left: 25px !important;
+            background-position: left center !important;
+          }
+          &.views-field-uid {
+            width: 130px;
+            text-align: center;
+          }
+          &.views-field-status {
+            width: 135px;
+            text-align: center;
+            & + .views-field-status {
+              width: 110px;
+              text-align: center;
+            }
+          }
+        }
+      }
+      tr {
+        border-spacing: 0;
+        td {
+          padding: 20px 15px;
+          font-size: 13px !important;
+          font-weight: 400 !important;
+          text-align: left;
+          color: #595d6e !important;
+          border-bottom: solid 1px #eee;
+          border-collapse: collapse;
+          border-spacing: 0;
+          &.views-field-field-data {
+            text-align: left;
+          }
+          &.views-field-created {
+            text-align: left;
+            padding-left: 25px;
+            background-position: left center !important;
+          }
+          &.views-field-uid {
+            text-align: center;
+          }
+          &.views-field-status {
+            text-align: center;
+          }
+        }
+        &:last-child {
+          td {
+            border: 0;
+          }
+        }
+      }
+    }
+  }
+}
